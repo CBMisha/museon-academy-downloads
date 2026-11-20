@@ -1,6 +1,6 @@
 ---
 name: photo-to-unboxing-site
-description: Turn a learner's portrait into a branded 3D unboxing experience. Generate figure art, design packaging, create and optimize a Meshy model, and deliver a private site or downloadable files. Use this skill to resume or update an existing project too.
+description: Turn a learner's portrait into a branded 3D unboxing experience. Generate figure art, design packaging, create and optimize a Meshy model, and deliver a public site by default, a private site on request, or downloadable files. Use this skill to resume or update an existing project too.
 ---
 
 # Photo to Unboxing
@@ -63,7 +63,7 @@ The experience includes film peeling, a spring-loaded tear strip, automatic open
 
 ## Deliver the learner's project
 
-- **Hosted:** Follow the current Sites skill. Create one site for a new personal project and retain its project ID. For updates, open the existing checkout and use its project ID and audience. Package the assembled static output, push the exact source, and deploy the matching version. Keep credentials in session memory. Follow the same deployment through to success and return the verified URL. Default new projects to private. Change the audience only when requested. When publishing publicly, explain that visitors can save the model.
+- **Hosted:** Follow the current Sites skill. Create one site for a new personal project and retain its project ID. For updates, open the existing checkout and use its project ID and audience. Package the assembled static output, push the exact source, and deploy the matching version. Keep credentials in session memory. Follow the same deployment through to success and return the verified URL. For new hosted projects, use public link access by default. State this default when gathering the design brief so the learner can choose private or download-only. Sites initially creates an unpublished private project. For the public route, use sites_update_site_access with access_mode public on that new project, check the returned access_mode, then save_site_version and deploy_site_version for the matching commit and archive. Confirm a successful deployment and public access before returning the link. Honor any explicit private choice using the owner-private deployment route. If the account cannot enable public access, report the actual restriction and available delivery options. Preserve the current audience when updating an existing site unless the learner requests a change.
 - **Download or local-only:** Provide a playable static package and its launch instructions. Skip registration and deployment for this route.
 - Include the figure count, before/after asset sizes, cost when verifiable, and the local record needed to resume. Say which checks were performed. If an operation is blocked, distinguish delivered files from steps still pending.
 
@@ -71,7 +71,7 @@ The experience includes film peeling, a spring-loaded tear strip, automatic open
 
 The instructor distributes these versioned files through the existing GitHub repository. Running a learner's project uses their account and does not publish course releases.
 
-- [Student guide](https://github.com/CBMisha/museon-academy-downloads/releases/download/photo-to-unboxing-v1.1.0/unboxing-workflow.html)
-- [Installable skill](https://github.com/CBMisha/museon-academy-downloads/releases/download/photo-to-unboxing-v1.1.0/photo-to-unboxing-site.zip)
-- [Offline demo](https://github.com/CBMisha/museon-academy-downloads/releases/download/photo-to-unboxing-v1.1.0/unboxing-demo.html)
-- [Demo source and static site](https://github.com/CBMisha/museon-academy-downloads/releases/download/photo-to-unboxing-v1.1.0/unboxing-demo.zip)
+- [Student guide](https://github.com/CBMisha/museon-academy-downloads/releases/download/photo-to-unboxing-v1.2.0/unboxing-workflow.html)
+- [Installable skill](https://github.com/CBMisha/museon-academy-downloads/releases/download/photo-to-unboxing-v1.2.0/photo-to-unboxing-site.zip)
+- [Offline demo](https://github.com/CBMisha/museon-academy-downloads/releases/download/photo-to-unboxing-v1.2.0/unboxing-demo.html)
+- [Demo source and static site](https://github.com/CBMisha/museon-academy-downloads/releases/download/photo-to-unboxing-v1.2.0/unboxing-demo.zip)
