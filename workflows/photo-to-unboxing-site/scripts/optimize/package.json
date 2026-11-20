@@ -1,0 +1,17 @@
+{
+  "name": "photo-to-unboxing-model-optimizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Non-destructive, cached GLB optimization for browser unboxing scenes",
+  "type": "module",
+  "engines": { "node": ">=20.19.0" },
+  "scripts": { "optimize": "node optimize-glb.mjs" },
+  "dependencies": {
+    "@gltf-transform/core": "4.2.1",
+    "@gltf-transform/extensions": "4.2.1",
+    "@gltf-transform/functions": "4.2.1",
+    "draco3dgltf": "1.5.7",
+    "meshoptimizer": "0.25.0",
+    "sharp": "0.35.5"
+  }
+}
